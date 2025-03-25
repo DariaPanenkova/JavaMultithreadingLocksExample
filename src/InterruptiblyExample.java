@@ -3,7 +3,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class InterruptiblyExample {
     public static void main(final String[] args) throws InterruptedException {
         ReentrantLock lock = new ReentrantLock();
-        //тут сработает прервывание 
+        //тут сработает прервывание
         Thread thread = new Thread(() -> {
             int i = 0;
             System.out.println("before entering ReentrantLock block");
